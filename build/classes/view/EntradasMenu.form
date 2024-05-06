@@ -326,6 +326,9 @@
         </Component>
         <Component class="javax.swing.JRadioButton" name="btjEletron">
           <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="btgMassa"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Eletron"/>
           </Properties>
         </Component>

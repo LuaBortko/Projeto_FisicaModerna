@@ -36,7 +36,7 @@ public class MenuRespostasController {
         r.getLblResposta().setText("ψi(x) = " + 
                 String.format("%.3E",dados.getA()) + "*sen(" + 
                 String.format("%.3E",dados.getkI()) + "*X)");
-        r.getLblResposta1().setText("ψi(x) = " + 
+        r.getLblResposta1().setText("ψf(x) = " + 
                 String.format("%.3E",dados.getA()) + "*sen(" + 
                 String.format("%.3E",dados.getkF()) + "*X)");
         r.getLblJustificativa().setText("<html> Para conseguirmos a função de "
@@ -132,7 +132,7 @@ public class MenuRespostasController {
         // Criar o gráfico
         JFreeChart chart = ChartFactory.createXYLineChart(
                 "Gráfico de Função de Onda n = " + dados.getNi(),
-                "x",
+                "x(m)",
                 "ψi(x)",
                 dataset
         );
@@ -165,7 +165,7 @@ public class MenuRespostasController {
         // Criar o gráfico
         JFreeChart chart = ChartFactory.createXYLineChart(
                 "Gráfico de Função de Onda n = " + dados.getNf(),
-                "x",
+                "x(m)",
                 "ψi(x)",
                 dataset
         );
@@ -197,7 +197,7 @@ public class MenuRespostasController {
         // Criar o gráfico
         JFreeChart chart = ChartFactory.createXYLineChart(
                 "Gráfico da função distribuição de probabilidade n = " + dados.getNi(),
-                "x",
+                "x(m)",
                 "|ψi(x)|²",
                 dataset
         );
@@ -229,7 +229,7 @@ public class MenuRespostasController {
         // Criar o gráfico
         JFreeChart chart = ChartFactory.createXYLineChart(
                 "Gráfico da função distribuição de probabilidade n = " + dados.getNf(),
-                "x",
+                "x(m)",
                 "|ψi(x)|²",
                 dataset
         );

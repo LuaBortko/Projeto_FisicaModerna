@@ -282,6 +282,7 @@ public class EntradasMenu extends javax.swing.JFrame {
         btgMassa.add(btjProton);
         btjProton.setText("Proton");
 
+        btgMassa.add(btjEletron);
         btjEletron.setText("Eletron");
 
         jLabel1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
