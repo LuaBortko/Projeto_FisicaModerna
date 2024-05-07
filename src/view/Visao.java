@@ -65,6 +65,12 @@ public class Visao extends javax.swing.JFrame implements ActionListener{
                     yBola = 440;
                     yFoton = 0;
                     xFoton = 0;
+                    if(contadorFoton == 2){
+                        yVelocidadeFoton = 20;
+                    }
+                    if(contadorFoton == 3){
+                        yVelocidadeFoton = 1;
+                    }
                     break;
                 case 340:
                     yBola += 100;
@@ -166,7 +172,7 @@ public class Visao extends javax.swing.JFrame implements ActionListener{
     private Graphics g;
     private Graphics2D g2d = (Graphics2D) g;
     private int contador = 0;
-    
+    private int contadorFoton = 0;
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
