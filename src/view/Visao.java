@@ -157,7 +157,6 @@ public class Visao extends javax.swing.JFrame implements ActionListener{
     /**
      * @param args the command line arguments
      */
-    private int contadorFoton;
     private int xEmissao;
     private BufferedImage buffer;
     private Image foton;
