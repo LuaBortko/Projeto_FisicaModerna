@@ -52,6 +52,8 @@ public class MenuRespostas extends javax.swing.JFrame {
         lblFq10 = new javax.swing.JLabel();
         btI = new javax.swing.JButton();
         btJ = new javax.swing.JButton();
+        lblFq11 = new javax.swing.JLabel();
+        btK = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -171,6 +173,17 @@ public class MenuRespostas extends javax.swing.JFrame {
             }
         });
 
+        lblFq11.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        lblFq11.setText("k) Simulação");
+
+        btK.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        btK.setText("K");
+        btK.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btKActionPerformed(evt);
+            }
+        });
+
         jMenu1.setText("Função de onda");
 
         jMenuItem1.setText("Entradas");
@@ -221,9 +234,12 @@ public class MenuRespostas extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btI, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btJ))
+                                .addComponent(btJ)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(btK))
                             .addComponent(lblFq9)
-                            .addComponent(lblFq10))
+                            .addComponent(lblFq10)
+                            .addComponent(lblFq11))
                         .addGap(0, 12, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -250,11 +266,14 @@ public class MenuRespostas extends javax.swing.JFrame {
                 .addComponent(lblFq9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblFq10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblFq11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 14, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(btI, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btJ, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btJ, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btK, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(btA, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btB, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -316,6 +335,11 @@ public class MenuRespostas extends javax.swing.JFrame {
         control.botaoJ();
     }//GEN-LAST:event_btJActionPerformed
 
+    private void btKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btKActionPerformed
+        Visao v = new Visao(dados);
+        v.setVisible(true);
+    }//GEN-LAST:event_btKActionPerformed
+
 //    public static void main(String args[]) {
 //        /* Set the Nimbus look and feel */
 //        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -362,12 +386,14 @@ public class MenuRespostas extends javax.swing.JFrame {
     private javax.swing.JButton btH;
     private javax.swing.JButton btI;
     private javax.swing.JButton btJ;
+    private javax.swing.JButton btK;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JLabel lblFq;
     private javax.swing.JLabel lblFq1;
     private javax.swing.JLabel lblFq10;
+    private javax.swing.JLabel lblFq11;
     private javax.swing.JLabel lblFq2;
     private javax.swing.JLabel lblFq3;
     private javax.swing.JLabel lblFq4;
