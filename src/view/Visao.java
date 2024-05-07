@@ -54,6 +54,7 @@ public class Visao extends javax.swing.JFrame implements ActionListener{
                 yBola = 40;
                 xVelocidadeBola = 50;
                 contador = 0;
+                contadorFoton +=1;
   
             }
             if(contador == 2 ){
