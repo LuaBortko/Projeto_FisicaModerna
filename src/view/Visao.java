@@ -54,7 +54,7 @@ public class Visao extends javax.swing.JFrame implements ActionListener{
                 yBola = 40;
                 xVelocidadeBola = 50;
                 contador = 0;
-  
+                contadorFoton +=1;
             }
             if(contador == 2 ){
  
@@ -65,11 +65,11 @@ public class Visao extends javax.swing.JFrame implements ActionListener{
                     yBola = 440;
                     yFoton = 0;
                     xFoton = 0;
-                    if(contadorFoton == 2){
-                        yVelocidadeFoton = 20;
+                    if(contadorFoton == 1){
+                        yVelocidadeFoton = 6;
                     }
-                    if(contadorFoton == 3){
-                        yVelocidadeFoton = 1;
+                    if(contadorFoton == 2){
+                        yVelocidadeFoton = 4;
                     }
                     break;
                 case 340:
