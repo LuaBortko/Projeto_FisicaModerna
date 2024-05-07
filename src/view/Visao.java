@@ -57,7 +57,10 @@ public class Visao extends javax.swing.JFrame implements ActionListener{
   
             }
             if(contador == 2 ){
-            switch (yBola) {
+ 
+                switch (yBola) {
+                 
+                         
                 case 440:
                     yBola = 440;
                     yFoton = 0;
@@ -78,6 +81,25 @@ public class Visao extends javax.swing.JFrame implements ActionListener{
                     contador = 0;
                     break;
                 }
+                if(contadorFoton == 2){
+                    yBola = 440;
+                    g2d.setPaint(Color.black);
+                    g2d.drawLine(xBola, yBola, xBola+60, yBola-200);
+                    xVelocidadeBola = 2;
+                    contador = 0;
+                }
+                if(contadorFoton == 3){
+                    yBola += 100;
+                    xVelocidadeBola -= 30;
+                 
+                    if(yBola == 440){
+                        xVelocidadeBola = 2;
+                        yBola = 440;
+                        contador = 40;
+                    }
+                }
+
+          
             }
 
            double e = dados.geteFoton();
