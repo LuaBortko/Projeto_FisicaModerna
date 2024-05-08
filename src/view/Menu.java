@@ -23,6 +23,7 @@ public class Menu extends javax.swing.JFrame {
      */
     public Menu() {
         initComponents();
+        setLocationRelativeTo(null);//Faz a tela iniciar no centro
         controller = new ControllerMenu(this);
         this.getLblResumo().setText("<html>" +
 "   A teoria do potencial infinito descreve um " +

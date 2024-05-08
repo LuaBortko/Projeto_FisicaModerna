@@ -66,11 +66,11 @@ public class Visao extends javax.swing.JFrame implements ActionListener{
                     yBola = 440;
                     yFoton = 0;
                     xFoton = 0;
-                    if(contadorFoton == 2){
-                        yVelocidadeFoton = 20;
+                    if(contadorFoton == 1){
+                        velocidadeFoton = 6;
                     }
-                    if(contadorFoton == 3){
-                        yVelocidadeFoton = 1;
+                    if(contadorFoton == 2){
+                        velocidadeFoton = 4;
                     }
                     break;
                 case 340:
