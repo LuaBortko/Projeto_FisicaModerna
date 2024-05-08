@@ -18,6 +18,7 @@ public class MenuRespostas extends javax.swing.JFrame {
      */
     public MenuRespostas(FuncaoDeOnda f) {
         initComponents();
+        setLocationRelativeTo(null);
         dados = f;
         control = new MenuRespostasController(this,dados);
     }

@@ -5,6 +5,7 @@
 package view;
 
 import control.EntradasController;
+import java.awt.Toolkit;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -24,7 +25,10 @@ public class EntradasMenu extends javax.swing.JFrame {
      */
     public EntradasMenu() {
         initComponents();
+        setLocationRelativeTo(null);
+        
         control = new EntradasController(this);
+        
     }
 
     public JButton getBtcalcular() {
@@ -226,6 +230,8 @@ public class EntradasMenu extends javax.swing.JFrame {
         btjEletron = new javax.swing.JRadioButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        lblUnidadeM1 = new javax.swing.JLabel();
+        lblUnidadeM2 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -314,6 +320,12 @@ public class EntradasMenu extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel2.setText("ENTRADAS");
 
+        lblUnidadeM1.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        lblUnidadeM1.setText("m");
+
+        lblUnidadeM2.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        lblUnidadeM2.setText("m");
+
         jMenu1.setText("Menu");
 
         jMenuItem1.setText("menu");
@@ -351,7 +363,11 @@ public class EntradasMenu extends javax.swing.JFrame {
                                         .addComponent(lblA)
                                         .addGap(4, 4, 4)
                                         .addComponent(txtEntradaProbA, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(72, 72, 72)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblUnidadeM1)
+                                    .addComponent(lblUnidadeM2))
+                                .addGap(46, 46, 46)
                                 .addComponent(btcalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(61, 61, 61))
                     .addGroup(layout.createSequentialGroup()
@@ -413,11 +429,13 @@ public class EntradasMenu extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblA)
-                            .addComponent(txtEntradaProbA, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtEntradaProbA, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblUnidadeM1))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(lblB)
-                            .addComponent(txtEntradaProbB, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(txtEntradaProbB, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblUnidadeM2)))
                     .addComponent(btcalcular, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(16, Short.MAX_VALUE))
         );
@@ -489,6 +507,8 @@ public class EntradasMenu extends javax.swing.JFrame {
     private javax.swing.JLabel lblPropriedades;
     private javax.swing.JLabel lblPropriedades2;
     private javax.swing.JLabel lblUnidadeM;
+    private javax.swing.JLabel lblUnidadeM1;
+    private javax.swing.JLabel lblUnidadeM2;
     private javax.swing.JTextField txtEntradaLargura;
     private javax.swing.JTextField txtEntradaNF;
     private javax.swing.JTextField txtEntradaNI;

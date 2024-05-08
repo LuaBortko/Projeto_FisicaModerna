@@ -76,7 +76,12 @@
                                       <Component id="txtEntradaProbA" min="-2" pref="82" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
-                              <EmptySpace min="-2" pref="72" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblUnidadeM1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblUnidadeM2" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                               <Component id="btcalcular" min="-2" pref="191" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -160,11 +165,13 @@
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblA" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txtEntradaProbA" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                          <Component id="lblUnidadeM1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="lblB" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txtEntradaProbB" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
+                          <Component id="lblUnidadeM2" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Component id="btcalcular" min="-2" pref="64" max="-2" attributes="0"/>
@@ -354,6 +361,22 @@
           <Font name="Dialog" size="24" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="ENTRADAS"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblUnidadeM1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="m"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblUnidadeM2">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Dialog" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="m"/>
       </Properties>
     </Component>
   </SubComponents>

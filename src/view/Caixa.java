@@ -5,6 +5,7 @@
 package view;
 
 import control.ControllerCaixa;
+import java.awt.Toolkit;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -20,6 +21,7 @@ public class Caixa extends javax.swing.JFrame {
      */
     public Caixa() {
         initComponents();
+        setLocationRelativeTo(null);
          controller = new ControllerCaixa(this);
          this.getLblExplicacao().setText("<html>A função de onda (no SI) de uma"
                  + " partícula confinada em um poço de potencial infinito"

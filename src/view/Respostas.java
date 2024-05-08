@@ -22,6 +22,7 @@ public class Respostas extends javax.swing.JFrame {
      */
     public Respostas(FuncaoDeOnda f) {
         initComponents();
+        setLocationRelativeTo(null);
         dados = f;
         
     }

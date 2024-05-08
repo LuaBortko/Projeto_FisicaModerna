@@ -21,6 +21,7 @@ public class ResultadosFuncaoOnda extends javax.swing.JFrame {
      */
     public ResultadosFuncaoOnda() {
         initComponents();
+        setLocationRelativeTo(null);
         ResultadosFuncao func = new ResultadosFuncao(this);
     }
 

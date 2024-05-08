@@ -23,6 +23,7 @@ public class Visao extends javax.swing.JFrame implements ActionListener{
      */
     public Visao(FuncaoDeOnda f) {
         initComponents();
+        setLocationRelativeTo(null);
         dados = f;
         timer = new Timer(30, this);
         timer.start();
